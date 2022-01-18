@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+void pattern(int n) //making a function named pattern
+{
+    for(int i=1;i<=n;i++) //1st for loop denotes rows
+    {
+        for(int j=1;j<=i;j++) //2nd for loop denotes printing logic
+        {
+            cout<<"*"; //pattern to be printed
+        }
+        cout<<endl;
+    }
+}
+
+int main()
+{
+  int n;
+  cin>>n;
+  pattern(n); //calling function in main
+  cout<<endl;
+  return 0;
+}
