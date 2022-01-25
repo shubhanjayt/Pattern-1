@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+void pattern(int n)  //creating function
+{
+    for(int i=1;i<=n;i++) //looping rows
+    {
+        for(int k=n-i;k>0;k--) //looping space or blanks
+        {
+            cout<<" ";
+        }
+        for(int j=1;j<=i;j++) //looping columns
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
+int main() //main function
+{
+ int n; // input values
+ cin>>n;
+ pattern(n); //passing value through pattern
+ cout<<endl;
+   
+   return 0;
+}
